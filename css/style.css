@@ -1,0 +1,215 @@
+/* 
+1-common styles
+2-general styles
+3-sections
+    3.1 header section
+    3.2 home section
+    3.3 about section
+    3.4 potofolio section
+    3.5 service section
+    3.6 prices section
+    3.7 team section
+    3.8 blog page 
+    3.9 contact section
+    3.10 footer section
+    */
+
+/*
+1-common styles 
+ */
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+/*
+2-general styles 
+ */
+.container{
+    width: 80%;
+    /* height: 100px; */
+     background:red; 
+    margin:auto;
+}
+.overlay{
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+    background-color:rgba(0,0,0,0.7);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: montserrat,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+
+.hover-opacity{
+    transition: opacity .5s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+
+}
+/*
+3.1 header section 
+ */
+
+.clear{
+    clear: both;
+}
+.header{
+    /* background: gray; */
+
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header-content{
+    /* background: gray; */
+
+}
+
+.header .logo{
+    width: 35%;
+    float: left;
+}
+.header .logo img{
+    width: 25%;
+    margin-top: 15px;
+}
+.header .nav{
+    width: 65%;
+    float: left;
+    text-align: right;
+}
+.header .nav> li{
+    display: inline-block;
+    /* width: 75px; */
+     text-align: center; 
+}
+.header .nav> li> a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 30px 15px;
+    display: block;
+}
+.header .nav> li> a:after,
+.header .nav> li> a.active:after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #6195ff;
+    margin-top: 2px;
+}
+.header .nav >li> a:after{
+    width: 0;
+}
+.header .nav> li> a.active:after{
+    width: 100%;
+  
+}
+.header .nav> li> a:hover:after{
+    width: 100%;
+    transition: width 0.5s;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background-color: #6195ff;
+    width: 150px;
+    top: 70px;
+    left: -43px;
+    opacity: 0;
+    visibility: hidden;
+    text-decoration: none;
+    transition:opacity 0.5s , visibility 0.5s;
+}
+.dropdown-menu a{
+    padding: 10px;
+    color: #fff;
+    display: block;
+}
+
+
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*.header .nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 5% 2%;
+    text-align: right;
+    width: 75px;
+
+}
+.header .nav li a{
+    text-decoration: none;
+    color: #fff;
+}*/
+/*
+3.2 home section 
+ */
+.home{
+    background-image:url(../images/background/background1.webp);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+ }
+.home-content{
+    /* background-color:saddlebrown; */
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home .title{
+    color: #fff;
+    font-size: 50px;
+}
+.home .home-desc{
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5; 
+
+}
+.home .btn{
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.home .btn-start{
+    margin-right: 10px;
+    background-color: #fff;
+}
+.home .btn-learn{
+    background-color: #6195ff;
+    color: #fff;
+
+}
